@@ -12,6 +12,10 @@
 		0476E73829CB21BB0014BB42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0476E73729CB21BB0014BB42 /* Assets.xcassets */; };
 		0476E73B29CB21BB0014BB42 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0476E73A29CB21BB0014BB42 /* Preview Assets.xcassets */; };
 		0476E74229CB221D0014BB42 /* CameraCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0476E74129CB221D0014BB42 /* CameraCapture.swift */; };
+		0476E74429CB2A3F0014BB42 /* FrameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0476E74329CB2A3F0014BB42 /* FrameManager.swift */; };
+		0476E74629CB2F610014BB42 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0476E74529CB2F610014BB42 /* ViewModel.swift */; };
+		0476E74929CB3AD30014BB42 /* CGImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0476E74829CB3AD30014BB42 /* CGImage+Extension.swift */; };
+		0476E74B29CB3B480014BB42 /* FrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0476E74A29CB3B480014BB42 /* FrameView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +25,10 @@
 		0476E73729CB21BB0014BB42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0476E73A29CB21BB0014BB42 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0476E74129CB221D0014BB42 /* CameraCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCapture.swift; sourceTree = "<group>"; };
+		0476E74329CB2A3F0014BB42 /* FrameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameManager.swift; sourceTree = "<group>"; };
+		0476E74529CB2F610014BB42 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		0476E74829CB3AD30014BB42 /* CGImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+Extension.swift"; sourceTree = "<group>"; };
+		0476E74A29CB3B480014BB42 /* FrameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,9 +61,13 @@
 		0476E73229CB21B90014BB42 /* Camera */ = {
 			isa = PBXGroup;
 			children = (
+				0476E74729CB3ABA0014BB42 /* Extension */,
 				0476E73329CB21B90014BB42 /* CameraApp.swift */,
 				0476E73529CB21B90014BB42 /* ContentView.swift */,
+				0476E74529CB2F610014BB42 /* ViewModel.swift */,
 				0476E74129CB221D0014BB42 /* CameraCapture.swift */,
+				0476E74329CB2A3F0014BB42 /* FrameManager.swift */,
+				0476E74A29CB3B480014BB42 /* FrameView.swift */,
 				0476E73729CB21BB0014BB42 /* Assets.xcassets */,
 				0476E73929CB21BB0014BB42 /* Preview Content */,
 			);
@@ -68,6 +80,14 @@
 				0476E73A29CB21BB0014BB42 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0476E74729CB3ABA0014BB42 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0476E74829CB3AD30014BB42 /* CGImage+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,9 +160,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0476E74629CB2F610014BB42 /* ViewModel.swift in Sources */,
 				0476E73629CB21B90014BB42 /* ContentView.swift in Sources */,
 				0476E74229CB221D0014BB42 /* CameraCapture.swift in Sources */,
 				0476E73429CB21B90014BB42 /* CameraApp.swift in Sources */,
+				0476E74429CB2A3F0014BB42 /* FrameManager.swift in Sources */,
+				0476E74B29CB3B480014BB42 /* FrameView.swift in Sources */,
+				0476E74929CB3AD30014BB42 /* CGImage+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +298,7 @@
 				DEVELOPMENT_TEAM = 24Y5J3XVJV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "I'd like to use your camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -303,6 +328,7 @@
 				DEVELOPMENT_TEAM = 24Y5J3XVJV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "I'd like to use your camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

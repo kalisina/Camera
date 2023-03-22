@@ -8,14 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject private var vm = ViewModel(frameManager: FrameManager())
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ZStack {
+            FrameView(image: vm.frame).edgesIgnoringSafeArea(.all)
         }
-        .padding()
     }
 }
 
