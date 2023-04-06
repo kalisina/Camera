@@ -16,6 +16,7 @@
 		0476E74629CB2F610014BB42 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0476E74529CB2F610014BB42 /* ViewModel.swift */; };
 		0476E74929CB3AD30014BB42 /* CGImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0476E74829CB3AD30014BB42 /* CGImage+Extension.swift */; };
 		0476E74B29CB3B480014BB42 /* FrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0476E74A29CB3B480014BB42 /* FrameView.swift */; };
+		04892D7929D20F3800693963 /* PressAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04892D7829D20F3800693963 /* PressAction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		0476E74529CB2F610014BB42 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		0476E74829CB3AD30014BB42 /* CGImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+Extension.swift"; sourceTree = "<group>"; };
 		0476E74A29CB3B480014BB42 /* FrameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameView.swift; sourceTree = "<group>"; };
+		04892D7829D20F3800693963 /* PressAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressAction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 		0476E73229CB21B90014BB42 /* Camera */ = {
 			isa = PBXGroup;
 			children = (
+				04892D7A29D2112C00693963 /* Modifiers */,
 				0476E74729CB3ABA0014BB42 /* Extension */,
 				0476E73329CB21B90014BB42 /* CameraApp.swift */,
 				0476E73529CB21B90014BB42 /* ContentView.swift */,
@@ -88,6 +91,14 @@
 				0476E74829CB3AD30014BB42 /* CGImage+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		04892D7A29D2112C00693963 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				04892D7829D20F3800693963 /* PressAction.swift */,
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +178,7 @@
 				0476E74429CB2A3F0014BB42 /* FrameManager.swift in Sources */,
 				0476E74B29CB3B480014BB42 /* FrameView.swift in Sources */,
 				0476E74929CB3AD30014BB42 /* CGImage+Extension.swift in Sources */,
+				04892D7929D20F3800693963 /* PressAction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +311,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "I'd like to use your camera";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "I'd like to save photo and video to your library";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -329,6 +342,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "I'd like to use your camera";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "I'd like to save photo and video to your library";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
